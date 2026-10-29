@@ -148,10 +148,12 @@ h3 {
 }
 
 p,
-ul {
+ul,
+ol {
   margin: 0 0 1rem;
 }
-ul {
+ul,
+ol {
   padding-left: 1.25rem;
 }
 li {
@@ -179,6 +181,20 @@ li::marker {
   border: 1px solid var(--hairline);
   border-radius: 20px;
   padding: 1.25rem 1.25rem;
+}
+
+/* Guides */
+.quote {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--hairline);
+  font-style: italic;
+}
+.next {
+  margin: 2.5rem 0 1rem;
+}
+.next p:last-child {
+  margin-bottom: 0;
 }
 
 /* Home */
