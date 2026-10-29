@@ -15,6 +15,8 @@ Plain HTML and CSS, with no build step, no JavaScript, no trackers and no extern
 - `assets/fonts/`: Inter 200, 300 and 300 italic, subset to Latin as woff2 (SIL OFL 1.1, see `Inter-OFL.txt`).
 - `assets/img/`: `logo.svg`, `lockup.svg` and `icon-1024.png` copied from the app's `assets/brand/`; `og.png` (1200×630) is the lockup on the base colour; `apple-touch-icon.png` and `favicon-32.png` are resized from `icon-1024.png`.
 - `CNAME`: the custom domain. `.nojekyll`: serve the files as they are.
+- `robots.txt` and `sitemap.xml`: for search engines. **Add every new page to `sitemap.xml`**, and update a page's `lastmod` when its content changes.
+- The home page has schema.org structured data (`application/ld+json`, a data block, not a script). Keep it true to the app: change `offers` when the price changes.
 
 To preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 
