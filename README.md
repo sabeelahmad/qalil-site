@@ -9,6 +9,7 @@ Plain HTML and CSS, with no build step, no JavaScript, no trackers and no extern
 | `index.html` | Home |
 | `privacy/index.html` | Privacy policy: https://qalil.app/privacy/ |
 | `support/index.html` | Support, FAQ and credits: https://qalil.app/support/ |
+| `guides/` | Guides (index + one folder per guide): https://qalil.app/guides/ |
 | `404.html` | Not found |
 
 - `assets/site.css`: all styles. Colours match the app (dark only).
