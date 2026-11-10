@@ -293,6 +293,16 @@ li::marker {
   text-align: center;
   margin-top: 3rem;
 }
+/* Apple's badge, unmodified: at least 40 px tall, with clear space of a quarter of its height. */
+.badge {
+  display: inline-block;
+  padding: 14px;
+}
+.badge img {
+  display: block;
+  height: 54px;
+  width: auto;
+}
 
 /* Support */
 .contact {

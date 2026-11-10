@@ -16,6 +16,7 @@ Plain HTML and CSS, with no build step, no JavaScript, no trackers and no extern
 - `assets/fonts/`: Inter 200, 300 and 300 italic, subset to Latin as woff2 (SIL OFL 1.1, see `Inter-OFL.txt`).
 - `assets/img/`: `logo.svg`, `lockup.svg` and `icon-1024.png` copied from the app's `assets/brand/`; `og.png` (1200×630) is the lockup on the base colour; `apple-touch-icon.png` and `favicon-32.png` are resized from `icon-1024.png`.
 - `CNAME`: the custom domain. `.nojekyll`: serve the files as they are.
+- `assets/img/app-store-badge.svg`: Apple's official "Download on the App Store" badge (black, US-UK English), from Apple's marketing tools (toolbox.marketingtools.apple.com), unmodified. Every page has the Smart App Banner (`apple-itunes-app`, app ID 6820683400).
 - `robots.txt` and `sitemap.xml`: for search engines. **Add every new page to `sitemap.xml`**, and update a page's `lastmod` when its content changes.
 - The home page has schema.org structured data (`application/ld+json`, a data block, not a script). Keep it true to the app: change `offers` when the price changes.
 
