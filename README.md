@@ -2,7 +2,7 @@
 
 The website for [Qalil](https://qalil.app), an app for reading a little Quran every day (iPhone now; Android later). Served by GitHub Pages from `main` at https://qalil.app.
 
-Plain HTML and CSS, with no build step, no JavaScript, no trackers and no external requests.
+Plain HTML and CSS, with no build step, no JavaScript (except the one-line store redirect in `get/`), no trackers and no external requests.
 
 | Path | Page |
 | --- | --- |
@@ -10,6 +10,7 @@ Plain HTML and CSS, with no build step, no JavaScript, no trackers and no extern
 | `privacy/index.html` | Privacy policy: https://qalil.app/privacy/ |
 | `support/index.html` | Support, FAQ and credits: https://qalil.app/support/ |
 | `guides/` | Guides (index + one folder per guide): https://qalil.app/guides/ |
+| `get/index.html` | https://qalil.app/get/: redirects to the App Store (Google Play for Android once `PLAY_URL` is set) |
 | `404.html` | Not found |
 
 - `assets/site.css`: all styles. Colours match the app (dark only).

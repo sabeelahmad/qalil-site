@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Get Qalil</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0f0d">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://qalil.app/">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+  <!-- Without JavaScript, fall back to the App Store. -->
+  <noscript><meta http-equiv="refresh" content="0; url=https://apps.apple.com/app/id6820683400"></noscript>
+  <script>
+    // Android goes to Google Play once PLAY_URL is set; everything else goes to the App Store.
+    var APP_STORE_URL = "https://apps.apple.com/app/id6820683400";
+    var PLAY_URL = ""; // e.g. "https://play.google.com/store/apps/details?id=<package>"
+    var isAndroid = /android/i.test(navigator.userAgent);
+    location.replace(isAndroid && PLAY_URL ? PLAY_URL : APP_STORE_URL);
+  </script>
+</head>
+<body>
+  <main id="main" class="wrap notfound">
+    <img src="/assets/img/logo.svg" width="96" height="96" alt="">
+    <h1>Opening the store…</h1>
+    <p class="muted">If nothing happens, use the button below.</p>
+    <p class="soon"><a class="badge" href="https://apps.apple.com/app/id6820683400"><img src="/assets/img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store"></a></p>
+  </main>
+</body>
+</html>
