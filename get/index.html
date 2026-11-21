@@ -13,10 +13,13 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/site.css">
   <!-- Without JavaScript, fall back to the App Store. -->
-  <noscript><meta http-equiv="refresh" content="0; url=https://apps.apple.com/app/id6820683400"></noscript>
+  <noscript><meta http-equiv="refresh" content="0; url=https://apps.apple.com/app/apple-store/id6820683400?pt=129584972&amp;ct=web&amp;mt=8"></noscript>
   <script>
     // Android goes to Google Play once PLAY_URL is set; everything else goes to the App Store.
-    var APP_STORE_URL = "https://apps.apple.com/app/id6820683400";
+    // App Store campaign tracking: pt is our provider token; ct is the campaign name from
+    // the link (qalil.app/get?ct=tree), "web" if none. Shows up in App Store Connect > Sources.
+    var CT = (new URLSearchParams(location.search).get("ct") || "web").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 40) || "web";
+    var APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6820683400?pt=129584972&ct=" + CT + "&mt=8";
     var PLAY_URL = ""; // e.g. "https://play.google.com/store/apps/details?id=<package>"
     var isAndroid = /android/i.test(navigator.userAgent);
     location.replace(isAndroid && PLAY_URL ? PLAY_URL : APP_STORE_URL);
@@ -27,7 +30,7 @@
     <img src="/assets/img/logo.svg" width="96" height="96" alt="">
     <h1>Opening the store…</h1>
     <p class="muted">If nothing happens, use the button below.</p>
-    <p class="soon"><a class="badge" href="https://apps.apple.com/app/id6820683400"><img src="/assets/img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store"></a></p>
+    <p class="soon"><a class="badge" href="https://apps.apple.com/app/apple-store/id6820683400?pt=129584972&amp;ct=web&amp;mt=8"><img src="/assets/img/app-store-badge.svg" width="162" height="54" alt="Download on the App Store"></a></p>
   </main>
 </body>
 </html>
