@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Privacy policy · Qalil</title>
-  <meta name="description" content="Qalil collects no personal data. Everything it stores stays on your phone.">
+  <meta name="description" content="Qalil collects no personal data. What you read stays on your phone; anonymous usage counts can be turned off.">
   <meta name="theme-color" content="#0a0f0d">
   <meta name="color-scheme" content="dark">
   <meta name="apple-itunes-app" content="app-id=6820683400">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Qalil">
   <meta property="og:title" content="Privacy policy · Qalil">
-  <meta property="og:description" content="Qalil collects no personal data. Everything it stores stays on your phone.">
+  <meta property="og:description" content="Qalil collects no personal data. What you read stays on your phone; anonymous usage counts can be turned off.">
   <meta property="og:url" content="https://qalil.app/privacy/">
   <meta property="og:image" content="https://qalil.app/assets/img/og.png">
   <meta property="og:image:width" content="1200">
@@ -35,9 +35,9 @@
 
   <main id="main" class="wrap">
     <h1>Privacy policy</h1>
-    <p class="meta">Effective 23 October 2026 · updated 20 November 2026</p>
+    <p class="meta">Effective 23 October 2026 · updated 22 November 2026</p>
 
-    <p class="lede">Qalil doesn’t collect any data about you. There are no accounts, and everything the app stores stays on your phone. The developer can’t see any of it. The only things Qalil sends are checks for app updates and new versions, and requests for the recitation audio if you listen along, described below.</p>
+    <p class="lede">Qalil doesn’t collect personal data. There are no accounts, and everything the app stores stays on your phone. The only things Qalil sends are checks for app updates and new versions, requests for the recitation audio if you listen along, and anonymous usage counts that you can turn off, all described below. None of them says what you read or which apps you picked.</p>
 
     <h2>What Qalil stores on your phone</h2>
     <p>To work, Qalil keeps a small database on your phone. It holds:</p>
@@ -47,7 +47,7 @@
       <li>your reading sessions: when each one started and ended, and how many seconds you were actively reading;</li>
       <li>the days you completed, with that day’s target.</li>
     </ul>
-    <p>This never leaves your phone. Qalil doesn’t ask for your name, email or anything else about you, and there’s nothing to sign in to.</p>
+    <p>This stays on your phone. The anonymous usage counts described below include a few numbers about your reading, such as how many seconds a visit to the reader lasted, but never where you are in the Quran or what you read. Qalil doesn’t ask for your name, email or anything else about you, and there’s nothing to sign in to.</p>
     <p>If you use iCloud Backup or back up to a computer, iOS includes Qalil’s data in that backup, as it does for every app. That backup belongs to you and Apple. On Android, if backup is on, Android includes Qalil’s data in your Google account’s backup, as it does for most apps. That backup belongs to you and Google. Qalil can’t access either.</p>
 
     <h2>On iPhone: Screen Time and the apps you pick</h2>
@@ -72,6 +72,20 @@
     <p>On iPhone, Qalil also asks Apple’s App Store which version of Qalil is the newest, so it can tell you once when a new version is out. The request contains only Qalil’s App Store identifier, nothing about you or your phone. It’s made from Qalil’s home screen, at most every six hours. Like any website you visit, Apple sees your IP address.</p>
     <p>Nothing about your reading, your settings or the apps you picked is sent. The random ID isn’t linked to you and isn’t used for tracking or advertising, and deleting Qalil deletes it.</p>
 
+    <h2>Anonymous usage counts</h2>
+    <p>From Qalil 1.0.5, Qalil sends anonymous counts of how the app is used, so its developer can see whether it helps people read and where it gets in the way: for example, how many people open Qalil each day, and how far into the daily time people get before they leave the reader. They go to PostHog, an analytics service, and are stored on PostHog’s servers in the European Union (Frankfurt).</p>
+    <p>What’s sent:</p>
+    <ul>
+      <li>when Qalil is opened, comes back to the front or goes to the background;</li>
+      <li>during setup: which setup screens you reached, whether Screen Time access was given, your daily target in minutes, and how many apps and categories you picked (never which ones);</li>
+      <li>in the reader: when it opens and what opened it (the home screen, a reminder or Qalil’s pause screen), how far you were into today’s time (in steps of 10%), and when you leave before the day’s time is done, how you left, how many seconds you read and how many pages you turned on that visit, and whether “Still reading?” appeared;</li>
+      <li>when you reach the day’s time: your target in minutes, how many reading sessions it took that day, and which day of reading with Qalil it is;</li>
+      <li>when you pause Qalil, for how many days;</li>
+      <li>with each of these: a random ID made for this install of Qalil, the app’s version, your phone’s model and operating system version, its language and time zone. Like any website you visit, PostHog also sees your IP address and may use it to estimate your country.</li>
+    </ul>
+    <p>Never sent: your name or anything that identifies you, an advertising identifier, the Quran text, which surah, page or ayah you read, your bookmark, your daily time, or which apps you picked. Qalil never links the random ID to you or to other apps, and the counts aren’t used for advertising or sold. Deleting Qalil deletes the random ID. See <a href="https://posthog.com/privacy">PostHog’s privacy policy</a>.</p>
+    <p>You can turn this off at any time in Qalil’s Settings, under <strong>Share anonymous usage</strong>. While it’s off, no usage counts are sent. Qalil still loads PostHog’s settings for the app when it opens; that request carries no usage counts.</p>
+
     <h2>Listening along</h2>
     <p>When you tap the headphones in the reader, Qalil plays a recitation by Yasser Ad-Dussary by streaming the audio file for the surah you are reading. The files come from Quranicaudio’s servers (download.quranicaudio.com) and, for Surah At-Tawbah, from Tarteel’s (audio-cdn.tarteel.ai). Those servers receive the address of the file you ask for and your IP address, as any website does when you open it. Qalil sends them nothing else: no account, no identifier, no reading history. Qalil doesn’t control how long those services keep their server logs; see <a href="https://quranicaudio.com/privacy">Quranicaudio’s privacy policy</a> and <a href="https://www.tarteel.ai/privacy">Tarteel’s</a>.</p>
     <p>The timing of each word, which Qalil uses to highlight the word being recited, is bundled in the app and stays on your phone. Qalil doesn’t save the audio. Listening needs an internet connection, and while you listen the screen stays on so the recitation isn’t interrupted. The time you spend listening counts toward your daily reading time, which stays on your phone like the rest.</p>
@@ -81,14 +95,14 @@
 
     <h2>What Qalil doesn’t do</h2>
     <ul>
-      <li>No analytics, tracking or advertising.</li>
+      <li>No tracking or advertising, and no analytics beyond the anonymous usage counts above, which you can turn off.</li>
       <li>No crash reporting, apart from the error message when an app update fails to load.</li>
-      <li>No third-party services that receive your data. The only outside services are Expo, for app updates, Apple’s App Store, for the new-version check, and Quranicaudio and Tarteel, for the recitation audio when you listen along, as described above. None of them receives anything about your reading, your settings or the apps you picked.</li>
-      <li>No other network requests. The Quran text, fonts, translation and word timings are all bundled in the app, so Qalil works offline; without a connection it simply skips both checks, and only listening along needs one. The Privacy and Contact links in Settings open this website in a browser.</li>
+      <li>No third-party services that receive your personal data. The only outside services are Expo, for app updates, Apple’s App Store, for the new-version check, Quranicaudio and Tarteel, for the recitation audio when you listen along, and PostHog, for the anonymous usage counts, as described above. None of them receives what you read, your bookmark or the apps you picked.</li>
+      <li>No other network requests. The Quran text, fonts, translation and word timings are all bundled in the app, so Qalil works offline; without a connection it simply skips both checks, keeps any usage counts on the phone until it’s online again, and only listening along needs one. The Privacy and Contact links in Settings open this website in a browser.</li>
     </ul>
 
     <h2>Deleting your data</h2>
-    <p>Delete Qalil from your phone and all of its data goes with it: your settings, reading history, the apps you picked and the schedule. There’s nothing stored anywhere else to delete.</p>
+    <p>Delete Qalil from your phone and all of its data goes with it: your settings, reading history, the apps you picked, the schedule and the random ID used for usage counts. Usage counts already sent aren’t linked to you, so they can’t be picked out as yours; once the random ID is gone, nothing new can be linked to them.</p>
 
     <h2>Children</h2>
     <p>Qalil isn’t directed at children under 13. It collects no personal data from anyone, children included.</p>
@@ -102,6 +116,7 @@
       <li>12 November 2026: added app updates through Expo, from Qalil 1.0.2: what the update check sends, and the error message if an update fails.</li>
       <li>16 November 2026: added the App Store version check on iPhone (what it sends and how often), and Apple’s rating prompt, which comes in Qalil 1.0.3.</li>
       <li>20 November 2026: added listening along, from Qalil 1.0.4: the recitation audio is streamed from Quranicaudio (and Tarteel for Surah At-Tawbah), which see your IP address, and the bookmark Qalil keeps on your phone.</li>
+      <li>22 November 2026: added anonymous usage counts through PostHog, from Qalil 1.0.5: what’s sent and never sent, where it’s stored (the EU), and the Settings switch that turns it off.</li>
     </ul>
 
     <h2>Contact</h2>
