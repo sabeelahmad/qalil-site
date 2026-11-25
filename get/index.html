@@ -18,8 +18,14 @@
     // Android goes to Google Play once PLAY_URL is set; everything else goes to the App Store.
     // App Store campaign tracking: pt is our provider token; ct is the campaign name from
     // the link (qalil.app/get?ct=tree), "web" if none. Shows up in App Store Connect > Sources.
-    var CT = (new URLSearchParams(location.search).get("ct") || "web").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 40) || "web";
-    var APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6820683400?pt=129584972&ct=" + CT + "&mt=8";
+    // Custom product pages (App Store Connect > Custom Product Pages): ?page=<name> opens that page instead of the
+    // default one, e.g. qalil.app/get?ct=uk-meta&page=read. Only the names listed here are accepted.
+    var PAGES = { read: "46bcf774-e0f7-40d3-b33f-fb9c35f58371" }; // "Read & Listen" (L3 screenshots)
+    var params = new URLSearchParams(location.search);
+    var CT = (params.get("ct") || "web").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 40) || "web";
+    var pageName = (params.get("page") || "").toLowerCase();
+    var PAGE = Object.prototype.hasOwnProperty.call(PAGES, pageName) ? PAGES[pageName] : "";
+    var APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6820683400?pt=129584972&ct=" + CT + "&mt=8" + (PAGE ? "&ppid=" + PAGE : "");
     var PLAY_URL = ""; // e.g. "https://play.google.com/store/apps/details?id=<package>"
     var isAndroid = /android/i.test(navigator.userAgent);
     location.replace(isAndroid && PLAY_URL ? PLAY_URL : APP_STORE_URL);
